@@ -55,10 +55,12 @@ $("#contactBtn").on("click", function(){
     displayContact()
 ;});
 
+//Open Contact Form Button
 $("#openContactBtn").on("click", function(){
     $("#contactMeForm").removeClass("d-none");
     $("#openContactBtn").addClass("d-none");
 });
+//Hide Contact Form after Sent
 $("#sendBtn").on("click", function(){
     $("#contactMeForm").addClass("d-none");
     $("#openContactBtn").removeClass("d-none");
@@ -66,8 +68,14 @@ $("#sendBtn").on("click", function(){
 
 $("#freelanceBtn").on("click", function(){
     displayContact();
+    $("#subjectBox").val("Website Build Inquiry");
+    $("#contactMeForm").removeClass("d-none");
+    $("#openContactBtn").addClass("d-none");
 });
 
 $("#corpBtn").on("click", function(){
     displayContact();
+    $("#subjectBox").val("Job Opportunity Inquiry");
+    $("#contactMeForm").removeClass("d-none");
+    $("#openContactBtn").addClass("d-none");
 });
