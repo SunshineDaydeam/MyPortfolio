@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alex Portfolio - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- jQuery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Moment Link -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Google Font Links -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="opaque navbar navbar-expand-md bg-white navbar-light border-bottom border-dark">
+        <div class="navbar-header">
+            <a class="navbar-brand lobster"><h1>Alex Bruner</h1></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-right"></span>
+        </button>       
+        <div class="collapse navbar-collapse justify-content-end text-dark" id="navbarSupportedContent">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item text-dark p-0 m-3 border-highlight-nav border-secondary" id="homeBtn">Home</li>
+                <li class="nav-item text-dark p-0 m-3" id="aboutBtn">About</li>
+                <li class="nav-item text-dark p-0 m-3" id="portBtn">Portfolio</li>
+                <li class="nav-item text-dark p-0 m-3"id ="contactBtn">Contact</li>
+            </ul>                
+        </div>
+    </nav>
+    <!-- End of Nav Bar -->
+
+
+    <div class="container pt-10 pb-5">
+
+
+        <!-- Home Page -->
+        <div class="row mt-10" id="homePage">
+            <div class="col-12 col-md-2"></div>
+            <div class="col-12 col-md-8 text-info ">
+                <h3 class="text-white text-outline">Hello world,</h3>
+                <h4 class="text-white text-outline">My name is <span class="font-weight-bold">Alex Bruner</span>, and I am a full-stack web developer. I enjoy building everything from small websites and games to working with teams on large complex projects.</h4>
+                <div class="text-center">
+                    <button class="btn btn-secondary m-2 border border-white" id="freelanceBtn">I Need a Website ></button>
+                    <button class="btn btn-danger m-2 border border-white" id="corpBtn">I'm Looking to Hire ></button>
+                </div>
+            </div>
+            <div class="col-12 col-md-2"></div> 
+        </div>
+        <!-- End of Home Page -->
+
+        <!-- Contact Page -->
+        <div class="bg-light p-4 border border-dark d-none" id="contactPage">
+            <h3 class="border-bottom border-dark pb-1 mb-3 text-info">Contact Me</h3>
+            <div class="row mb-4">
+                <div class="col-12 col-md-5 col-lg-4 mt-1">
+                    <img src="assets/images/CheapSunglasses.jpg" class="border border-dark" alt="Alex Bruner">
+                </div>
+                <div class="col-12 col-md-7 col-lg-8 mt-1">
+                    <h1 class="mb-0"><span class="font-weight-bold"> Alex Bruner</span></h1>
+                    <h6 class="border-bottom border-dark pb-3 mb-3 text-muted">Web and Mobile App Developer</h6>
+                    <div class="row">
+                        <div class="col-12 col-md-3"><p class="font-weight-bold mb-1">Address</p></div>
+                        <div class="col-12 col-md-9 text-muted"><p class="mb-1">8800 Dulcet Dr, Austin, TX 78745</p></div>
+                        <div class="col-12 col-md-3"><p class="font-weight-bold mb-1">Email</p></div>
+                        <div class="col-12 col-md-9 text-muted"><p class="mb-1">alexbruner@live.com</p></div>
+                        <div class="col-12 col-md-3"><p class="font-weight-bold mb-1">Phone</p></div>
+                        <div class="col-12 col-md-9 text-muted"><p class="mb-1">(515) 451-9293</p></div>
+                        <div class="col-12 col-md-3"><p class="font-weight-bold mb-1">Freelance</p></div>
+                        <div class="col-12 col-md-9 text-success font-weight-bold"><p class="mb-1">Available for Hire</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-lg btn-info" id="openContactBtn">Send Me a Message!</button>
+            </div>
+            <div class="d-none" id="contactMeForm">
+                <div class="row border-top border-dark pt-3">
+                    <div class="col-12 col-md-5 col-lg-4 mt-1">
+                        <p class="mb-0 font-weight-bold">Name</p>
+                        <input class="mb-2 inputArea border border-dark" type="text" placeholder="Your Name...">
+                        <p class="mb-0 font-weight-bold">Company</p>
+                        <input class="mb-2 inputArea border border-dark" type="text" placeholder="Your Company Name...">
+                        <p class="mb-0 font-weight-bold">Email</p>
+                        <input class="mb-2 inputArea border border-dark" type="text" placeholder="Your Email...">
+                        <p class="mb-0 font-weight-bold">Subject of Message</p>
+                        <input class="mb-2 inputArea border border-dark" type="text" placeholder="Subject...">
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-8 mt-1">
+                        <p class="mb-0 font-weight-bold">Your Message</p>
+                        <textarea name="" id="" rows="10" class="inputArea border border-dark" placeholder="Type your message to me here..."></textarea>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-lg btn-success mt-3" id="sendBtn">Send This Message</button>
+                </div>  
+            </div>
+        </div>
+        <!-- End of Contact Page -->
+
+        <!-- About Me Page -->
+        <div class="bg-light p-4 border border-dark d-none" id="aboutPage">
+                <h3 class="border-bottom border-dark pb-1 mb-3 text-info">About Me</h3>
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-4 mt-1">
+                    <div class="card rounded-0 border-dark">
+                        <img class="card-img-top" src="assets/images/Marathon.jpg" alt="Card image cap">
+                        <div class="card-body p-1">
+                            <p class="card-text text-muted"><i>With my mom after finishing the Phoenix Rock and Roll Marathon.</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-8 mt-1">
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Alex Bruner is a web developer and graphic designer currently living in the Austin, TX area. He graduated from The Evergreen State College with a Bachelor's degree in music, and is currently attending the UT Austin Coding Bootcamp.</p>
+                            <p>Previously, Alex worked as a retail and commercial sales manager for a specialty exercise equipment dealership in Phoenix, Arizona.</p>
+                            <p>Alex is an fluent musician and lives with his faithful blue heeler, Remy. He is also an avid runner and has run the 2017 Phoenix Rock and Roll Marathon, as well as a handful of half-marathons.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of About Page -->
+
+        <!-- Portfolio Page -->
+        <div class="bg-light p-4 border border-dark d-none" id="portPage">
+            <h3 class="border-bottom border-dark pb-1 mb-3 text-info">My Portfolio</h3>
+            <h3 class=" mb-2 text-dark text-center">WEB APPLICATIONS</h3>
+            <div class="row">  
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                    <div class="card bg-white border-dark p-3">
+                        <h5 class="text-success gloria">Satellite Search</h5>
+                        <img src="assets/images/screenshots/SatelliteSearch.png" alt="">
+                        <a href="https://github.com/SunshineDaydeam/GroupProject" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                        <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/GroupProject/" class="text-white" target="_blank">Go To Site</a></h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3">  
+                    <div class="card bg-white border-dark p-3">
+                        <h5 class="text-success gloria">Gif Search Engine</h5>
+                        <img src="assets/images/screenshots/GifSearch.png" alt="">
+                        <a href="https://github.com/SunshineDaydeam/Search-Engine" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                        <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Search-Engine/index.html" class="text-white" target="_blank">Go To Site</a></h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                    <div class="card bg-white border-dark p-3">
+                        <h5 class="text-success gloria">Train Database</h5>
+                        <img src="assets/images/screenshots/TrainTime.png" alt="">
+                        <a href="https://github.com/SunshineDaydeam/train-time" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                        <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/train-time/" class="text-white" target="_blank">Go To Site</a></h6>
+                    </div>
+                </div>
+            </div>
+           
+            <h3 class=" mb-2 text-center">GAMES</h3>
+            <div class="row">  
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                    <div class="card bg-white border-dark p-3">
+                        <h5 class="gloria text-danger">Bunny Wars</h5>
+                        <img src="assets/images/screenshots/BunnyWars.png" alt="">
+                        <a href="https://github.com/SunshineDaydeam/Bunny-Wars-RPG" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                        <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Bunny-Wars-RPG/" class="text-white" target="_blank">Play</a></h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3">  
+                        <div class="card bg-white border-dark p-3">
+                        <h5 class="text-danger gloria">Crystals</h5>
+                        <img src="assets/images/screenshots/Crystals.png" alt="">
+                        <a href="https://github.com/SunshineDaydeam/Crystal-Collector" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                        <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Crystal-Collector/index.html" class="text-white" target="_blank">Go To Site</a></h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <div class="card bg-white border-dark p-3">
+                        <h5 class="text-danger gloria">NFL Trivia Game</h5>
+                        <img src="assets/images/screenshots/NFLTrivia.png" alt="">
+                        <a href="https://github.com/SunshineDaydeam/Trivia-Game" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                        <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Trivia-Game/" class="text-white" target="_blank">Go To Site</a></h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card bg-white border-dark p-3">
+                        <h5 class="gloria text-danger">Hangman</h5>
+                        <img src="assets/images/screenshots/Hangman.png" alt="">
+                        <a href="https://github.com/SunshineDaydeam/Word_Guess_Game" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                        <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Word_Guess_Game/index.html" class="text-white" target="_blank">Play</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Portfolio Page -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="d-flex justify-content-center p-0 bg-dark border-top border-light">
+            <a href = "https://github.com/SunshineDaydeam" target="_blank"><img src="assets/images/icons/icons8-github-64.png" class="icon-link m-2"></a>
+            <a href = "https://www.linkedin.com/in/alex-bruner-366348155/" target="_blank"><img src="assets/images/icons/icons8-linkedin-50.png" class="icon-link m-2"></a>
+            <a href = "https://stackoverflow.com/users/9510977/alex-bruner" target="_blank"><img src="assets/images/icons/icons8-stack-overflow-filled-50.png" class="icon-link m-2" ></a>
+            <a href = "https://www.facebook.com/alex.d.bruner" target="_blank"><img src="assets/images/icons/icons8-facebook-50.png" class="icon-link m-2" ></a>
+        </div>
+        <div class="border-top border-dark opaque bg-white text-dark">
+            <p class="mb-0">This page is maintained by Alex Bruner. Copyright © 2018</p>
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="java.js"></script>
+</body>
+</html>
