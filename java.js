@@ -1,6 +1,5 @@
 //Nav Bar Buttons
-//Home Button
-$("#homeBtn").on("click", function(){
+function displayHome(){
     //Change Page Display
     $("#homePage").removeClass("d-none");
     $("#aboutPage").addClass("d-none");
@@ -11,10 +10,8 @@ $("#homeBtn").on("click", function(){
     $("#aboutBtn").removeClass("border-highlight-nav border-secondary");
     $("#portBtn").removeClass("border-highlight-nav border-secondary");
     $("#contactBtn").removeClass("border-highlight-nav border-secondary");
-
-});
-//About Button
-$("#aboutBtn").on("click", function(){
+};
+function displayAbout(){
     $("#homePage").addClass("d-none");
     $("#aboutPage").removeClass("d-none");
     $("#contactPage").addClass("d-none");
@@ -24,10 +21,8 @@ $("#aboutBtn").on("click", function(){
     $("#aboutBtn").addClass("border-highlight-nav border-secondary");
     $("#portBtn").removeClass("border-highlight-nav border-secondary");
     $("#contactBtn").removeClass("border-highlight-nav border-secondary");
-
-});
-//Portfolio Button
-$("#portBtn").on("click", function(){
+};
+function displayPortfolio(){
     $("#homePage").addClass("d-none");
     $("#aboutPage").addClass("d-none");
     $("#contactPage").addClass("d-none");
@@ -37,8 +32,8 @@ $("#portBtn").on("click", function(){
     $("#aboutBtn").removeClass("border-highlight-nav border-secondary");
     $("#portBtn").addClass("border-highlight-nav border-secondary");
     $("#contactBtn").removeClass("border-highlight-nav border-secondary");
-
-});
+}
+function displayReferences(){}
 function displayContact(){
     $("#homePage").addClass("d-none");
     $("#aboutPage").addClass("d-none");
@@ -50,6 +45,18 @@ function displayContact(){
     $("#portBtn").removeClass("border-highlight-nav border-secondary");
     $("#contactBtn").addClass("border-highlight-nav border-secondary");
 };
+//Home Button
+$("#homeBtn").on("click", function(){
+    displayHome();
+});
+//About Button
+$("#aboutBtn").on("click", function(){
+    displayAbout();
+});
+//Portfolio Button
+$("#portBtn").on("click", function(){
+    displayPortfolio();
+});
 //Contact Button
 $("#contactBtn").on("click", function(){
     displayContact()
@@ -78,4 +85,30 @@ $("#corpBtn").on("click", function(){
     $("#subjectBox").val("Job Opportunity Inquiry");
     $("#contactMeForm").removeClass("d-none");
     $("#openContactBtn").addClass("d-none");
+});
+
+$("#portWebBtn").on("click", function(){
+    if ($("#webRow").attr("data-state") == "shown"){
+        $(this).text("Web Apps...");
+        $("#webRow").hide();
+        $("#webRow").attr("data-state", "hidden");
+    }
+    else{
+        $(this).text("Web Apps");
+        $("#webRow").show();
+        $("#webRow").attr("data-state", "shown");
+    }
+});
+$("#portGamesBtn").on("click", function(){
+    console.log($(this));
+    if ($("#gamesRow").attr("data-state") == "shown"){
+        $(this).text("Games...");
+        $("#gamesRow").hide();
+        $("#gamesRow").attr("data-state", "hidden");
+    }
+    else{
+        $(this).text("Games");
+        $("#gamesRow").show();
+        $("#gamesRow").attr("data-state", "shown");
+    }
 });
